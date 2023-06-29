@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "3a320fb7-f19f-49f6-82ac-442ce1e1bdda",
+		"name": "Tienda de mascotas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27180019"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 123456789,\n  \"username\": \"emineer\",\n  \"firstName\": \"emine\",\n  \"lastName\": \"er\",\n  \"email\": \"eminekaynarer@gmail.com\",\n  \"password\": \"1234\",\n  \"phone\": \"123456789\",\n  \"userStatus\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/user/emineer",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user",
+						"emineer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sold pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/pet/findByStatus?status=sold",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"pet",
+						"findByStatus"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "sold"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
