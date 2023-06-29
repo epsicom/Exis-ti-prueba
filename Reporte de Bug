@@ -1,0 +1,28 @@
+Reporte de Bug: Error de inicio de sesión
+
+Prioridad: Muy Alta
+Impacto: Crítico
+Probabilidad de Ocurrencia: Siempre
+
+Descripción:
+He identificado un error en el sitio web http://zero.webappsecurity.com/ relacionado con la funcionalidad de inicio de sesión. 
+Al intentar iniciar sesión con credenciales válidas, aparece un mensaje de error que dice "Este sitio no puede proporcionar una conexión segura". 
+Cuando los usuarios hacen clic en el icono de la flecha hacia atrás para volver a la página de inicio de sesión, el inicio de sesión se realiza automáticamente.
+
+Pasos para reproducir:
+1- Navega al sitio web https://zero.webappsecurity.com/
+2- Haga clic en el botón Signin
+3- Ingrese un nombre de usuario y contraseña válidos
+nombre de usuario = username
+contraseña = password
+4- Haga clic en el botón Sign in
+
+Resultado Esperado:
+El usuario está conectado
+
+Resultado actual:
+Aparece el mensaje de error "This site cannot provide a secure connection". Cuando el usuario haga clic en el botón de flecha hacia atrás para volver a la página de inicio de sesión, el usuario está conectado
+
+Evidencia:
+La captura de pantalla adjunta muestra claramente el mensaje de error que se muestra después de intentar iniciar sesión con credenciales válidas.
+
